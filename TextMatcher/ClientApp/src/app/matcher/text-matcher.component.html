@@ -1,0 +1,17 @@
+<h1>Match the strings</h1>
+
+<p>This is a simple example of matching a sub-string position in main string</p>
+
+<div class="form-group width-5">
+  <label>Text </label>&nbsp;
+  <input class="form-control form-control-sm" type="text" id="mainText" name="mainText" [(ngModel)]="textString" />
+</div>
+<div class="form-group">
+  <label>SubText </label>&nbsp;
+  <input class="form-control form-control-sm" type="text" id="subText" name="subText" [(ngModel)]="subTextString"/>
+</div>
+
+<button class="btn btn-primary" (click)="calculateSubStringPosition()">Print Sub-String Position in the text</button>
+<div *ngIf="output && output.length > 0">
+  <h4>Result: </h4><span>Output: {{output}}</span>
+</div>
